@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+body{
+    color: #cfb0b0;
+    background-color: #33352b;
+    background-image:
+        radial-gradient(at 9% 89%, rgb(53, 58, 65) 0px, transparent 50%),
+        radial-gradient(at 72% 6%, rgb(184, 6, 92) 0px, transparent 50%),
+        radial-gradient(at 24% 19%, rgb(53, 58, 65) 0px, transparent 50%),
+        radial-gradient(at 65% 6%, rgb(70, 57, 56) 0px, transparent 50%),
+        radial-gradient(at 20% 98%, rgb(165, 0, 121) 0px, transparent 50%),
+        radial-gradient(at 44% 9%, rgb(70, 66, 58) 0px, transparent 50%),
+        radial-gradient(at 10% 9%, rgb(70, 74, 56) 0px, transparent 50%);
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.glass-container{
+    display: block;
+    min-width: 1200px;
+    margin-top: 10vh;
+    margin-bottom: 30px;
+    padding: 50px;
+    border-radius: 16px;
+    backdrop-filter: blur(11.6px);
+    -webkit-backdrop-filter: blur(11.6px);
+}
+
+.navbar {
+    margin: auto;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: -10px;
+    transition: all ease .3s;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.nav-link a {
+    padding-bottom: 0.75rem;
+    color: #fff;
+    transition: all ease .3s;
+}
+
+.nav-link:hover {
+    transform: scale(1.2);
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.main{
+    margin-top: 10vh;
+    display: inline-block;
+    padding: 20px;
+}
+
+.main h2{
+    font-size: 35px;
+}
+
+.main p{
+    font-size: 16px;
+    line-height: 23px;
+}
+
+button{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    border-color: #2668db;
+    background-color: #2668db;
+}
+
+.image-wrapper{
+    display: flex;
+    margin-top: 5vh;
+    justify-content: right;
+}
+
+.image-wrapper img{
+    max-width: 300px;
+}
+
+@media screen and (max-width: 1075px) {
+    .content{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .logo{
+        font-size: 22px;
+    }
+    li.nav-link{
+        font-size: 13px;
+    }
+    .main h2{
+        font-size: 28px;
+    }
+    .main p{
+        font-size: 15px;
+    }
+    button{
+        font-size: 13px;
+    }
+    .image-wrapper img{
+        max-width: 400px;
+    }
+}
+
+
+.container {
+    margin: 0;
+    padding: 5rem 2rem;
+    background: none;
+    border-radius: 16px;
+    backdrop-filter: blur(11.6px);
+    min-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .header h2, p{
+    text-align: center;
+}
+
+
+.column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+} 
+
+
+.column .row {
+    position: relative;
+    display: flex;
+    padding: 20px 0;
+    margin-bottom: 1rem;
+    color: #18181B;
+    transition: all .3s ease;
+}
+
+.column .row .icon {
+    min-width: 50px;
+    height: 50px;
+    background: #fff;
+    color: #18181B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.column .row .text {
+    display: flex;
+    margin-left: 10px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.column .row .text h5 {
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.column .row .text p {
+    font-weight: 500;
+    color: #efe7e7;
+}
+
+.column .row .ig {
+    min-width: 50px;
+    height: 50px;
+    background: #ffffff;
+    color: #18181B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.column .row .wa {
+    min-width: 50px;
+    height: 50px;
+    background: #fff;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.column form {
+    padding: 40px;
+    margin-top: 2rem;
+    background-color: #6d2146;
+}
+
+.column .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    color: #000000;
+}
+
+.column .inputBox input,
+.column .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #222831;
+    outline: none;
+    resize: none;
+}
+
+.column .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #000000;
+}
+
+.column .inputBox input:focus ~ span,
+.column .inputBox input:valid ~ span,
+.column .inputBox textarea:focus ~ span,
+.column .inputBox textarea:valid ~ span
+{
+    color: #000000;
+    font-size: 12px;
+    transform: translateY(-25px);
+}
+
+.column .inputBox input[type="submit"]{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.column .inputBox input[type="submit"]:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+}
